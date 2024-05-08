@@ -4,7 +4,7 @@ pipeline {
    
     stage ('test') {
       steps {
-        sh 'docker ps -a'
+        sh 'sudo docker ps -a'
       }
     }
     stage ('Run Docker Compose') {
