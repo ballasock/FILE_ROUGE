@@ -4,12 +4,12 @@ pipeline {
    
     stage ('test') {
       steps {
-        bat 'docker ps -a'
+        sh 'docker ps -a'
       }
     }
     stage ('Run Docker Compose') {
       steps {
-        bat 'docker-compose up  -d --build'
+        sh 'docker-compose up  -d --build'
       }
     }
   }
